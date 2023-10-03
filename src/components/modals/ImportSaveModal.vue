@@ -172,8 +172,8 @@ export default {
         <div v-if="progress.isEternityUnlocked">
           Eternities: {{ formatPostBreak(player.eternities, 2) }}
         </div>
-        <div v-if="progress.isRealityUnlocked">
-          Realities: {{ formatPostBreak(player.realities, 2) }}
+        <div v-if="progress.isQuantumUnlocked">
+          Quantums: {{ formatPostBreak(player.quantums, 2) }}
         </div>
         <div v-if="progress.hasFullCompletion">
           Full game completions: {{ formatInt(player.records.fullGameCompletions) }}

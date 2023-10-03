@@ -417,7 +417,7 @@ window.player = {
     },
     lastEP: DC.DM1,
   },
-  realities: 0,
+  quantums: 0,
   partSimulatedReality: 0,
   reality: {
     realityMachines: DC.D0,

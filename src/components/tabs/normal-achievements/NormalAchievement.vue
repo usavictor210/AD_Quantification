@@ -51,6 +51,7 @@ export default {
     classObject() {
       return {
         "o-achievement": true,
+        "o-achievement--normal_quantum": this.id > 128,
         "o-achievement--disabled": this.isDisabled,
         "o-achievement--locked": !this.isUnlocked && !this.isDisabled && !this.isObscured,
         "o-achievement--unlocked": this.isUnlocked,

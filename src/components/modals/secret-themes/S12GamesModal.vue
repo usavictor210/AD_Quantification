@@ -38,6 +38,13 @@ export default {
         <b class="c-modal-s12-games__magnified-display__text">
           {{ S12Games.entries[S12Games.selected].name }}
         </b>
+        <br>
+        <br>
+        <b class="c-modal-s12-games__text">
+          {{ S12Games.entries[S12Games.selected].desc }}
+        </b>
+        <br>
+        (You will go to an external site)
       </template>
     </div>
   </ModalWrapper>

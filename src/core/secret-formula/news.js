@@ -444,7 +444,7 @@ export const news = [
           link: "https://www.decisionproblem.com/paperclips/index2.html"
         },
         {
-          name: "Monies<sup>2</sup",
+          name: "Monies<sup>2</sup>",
           link: "https://sneekxy.nmtechgroup.com/monies2/"
         },
         {
@@ -457,7 +457,7 @@ export const news = [
         }
       ];
       const game = games.randomElement();
-      return `An unidentified developer of Antimatter Dimensions would like to
+      return `An unidentified developer of the original Antimatter Dimensions would like to
         recommend that you play <a href="${game.link}" target="_blank">${game.name}</a>`;
     },
   },
@@ -3287,6 +3287,102 @@ export const news = [
   {
     id: "p1",
     text: "Is this a jojo reference?",
+  },
+  /* begin quantification */
+  { 
+    id: "q1",
+    text: "Welcome to Antimatter Dimensions: Quantum Panic. After 5 years in development, hopefully, it will have been worth the wait. Please let me know what you think after you have had a chance to play. I can be reached at usavictor2 on Discord or usavictor210 on GitHub. Thanks, and have fun!"
+    // the 5 years should be referencing the time when ng+3 was born
+  },
+  { 
+    id: "q2",
+    text: "You exist. I exist."
+  },
+  { 
+    id: "q3",
+    text: "If you are not playing Antimatter Dimensions: Quantum Panic on localhost:8080, the site is bootleg. Wait, we're already bootleg."
+  },
+  { 
+    id: "q4",
+    text: "Nonus modus non est."
+  },
+  { 
+    id: "q5",
+    text: "Qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq            god dang it wrong text field. Is this a common thing with sleep deprived people or what?"
+  },
+  { 
+    id: "q6",
+    text: "Zoinks, scoobs! The antimatter is heading straight towards us!"
+  },
+  {
+    id: "q7",
+    text: "If I lived in a world with 10 dimensions, I would be so confused.",
+    get unlocked() { return player.dimensionBoosts >= 5 || player.galaxies > 0 || PlayerProgress.infinityUnlocked(); }
+  },
+  {
+    id: "q8",
+    text: "https://www.youtube.com/watch?v=Svj1bZz2mXw",
+    onClick() { window.open("https://www.youtube.com/watch?v=Svj1bZz2mXw") }
+  },
+  {
+    id: "q9",
+    text: "Aarex is gonna be mad because we're making another mod of NG+2, but who f***ing cares... Editor's note: He does not care.",
+  },
+  {
+    id: "q10",
+    text: "You wouldn't download an antimatter particle. Would you?"
+  },
+  {
+    id: "q11",
+    text: "🦟"
+  },
+  {
+    id: "q12",
+    text: "\"\'hi guys, i'm trying to beat 20c apoc chaos in impossible ascension. i just got to whack him for 2 more minutes... ok...... it's going go- oh god dang it he just pulled out his rainBOW AURA AND ASD@!#@!#$%\" ~ Anti-Idler\""
+  },
+  {
+    id: "q13",
+    text: "I wanna be the antimatter - Many years ago \" antimatter \" left world and retreat to \" celestials \" Now \" player \" goes to defeat \" celestials \" and become \" the antimatter \" with his dimension pass handed down by former \" grandfather hevipelle \". Go find the \" 8 \" units... Now become \" the Antimatter \""
+  },
+  {
+    id: "q14",
+    text: "Worldwide antimatter stacking competition ends as the dubbed \"leaning tower of antimatter\" is created."
+  },
+  {
+    id: "q15",
+    text: "Hey. Yeah? You ever wonder why we're here? It's one of life's greatest mysteries, isn't it? Why are we here?"
+  },
+  {
+    id: "q16",
+    text: "Hi, Billy Mays here for the game Antimatter Dimensions: Reality Update, the newest way to waste time!",
+    isAdvertising: true
+  },
+  {
+    id: "q17",
+    get text(){
+      const year = (1970 + Math.floor((Date.now()/1000)/3.154e+7))
+      return `\"But now it's ${year}"!\" - C16946986`
+    }
+  },
+  {
+    id: "q18",
+    text: "\"Make this into the news ticker\" ~ Cats and Dogs, 2020"
+  },
+  {
+    id: "q19",
+    text: "\"plz make this an entry to the news ticker\" ~ Diamboy, 2020"
+  },
+  {
+    id: "q20",
+    text: "<a href='https://www.youtube.com/watch?v=TN25ghkfgQA'>\"What if you pinged yourself?\"</a>"
+  },
+  {
+    id: "q21",
+    text: "Did you know? No you don't..."
+  },
+  {
+    id: "q22",
+    text: "No news is good news. ...Maybe."
   },
   /* eslint-disable max-len */
   {

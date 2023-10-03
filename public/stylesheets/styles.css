@@ -3010,7 +3010,11 @@ br {
 }
 
 .o-achievement--normal {
-  background-image: url("../images/normal achievements.png");
+  background-image: url("../images/pre_quantum_achievements.png");
+}
+
+.o-achievement--normal_quantum {
+  background-image: url("../images/post_quantum_achievements.png");
 }
 
 .o-achievement--cancer {

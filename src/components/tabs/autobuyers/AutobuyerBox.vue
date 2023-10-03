@@ -188,7 +188,7 @@ export default {
   >
     {{ name }}
     <br>
-    Requirement: {{ format(antimatterCost) }} Total Antimatter {{ showEternity }}
+    Requirement: {{ format(antimatter, 2, 2) }} / {{ format(antimatterCost) }} Highest Antimatter {{ showEternity }}
   </div>
 </template>
 

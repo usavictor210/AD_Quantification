@@ -60,6 +60,12 @@ export default {
     >
       {{ allAutobuyersDisabled ? "Enable" : "Disable" }} all autobuyers
     </PrimaryButton>
+    <PrimaryButton
+      class="o-primary-btn--subtab-option"
+      @click="toggleAutobuyerBuy()"
+      >
+      Set all autobuyers to buy {{ allAutobuyersNotOnMax ? "max" : "singles" }}
+    </PrimaryButton>
     <span v-if="isDoomed">
       <PrimaryButton
         v-if="showContinuum"

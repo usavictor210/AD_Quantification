@@ -41,6 +41,7 @@
 }
 
 .o-achievement--normal,
+.o-achievement--normal_quantum,
 .o-achievement--secret,
 .o-achievement--cancer {
   background-image: none;

@@ -1,4 +1,6 @@
-# Antimatter Dimensions
+# Antimatter Dimensions: Quantum Panic v0.0.3: Accidental overflow
+A mod of the original Antimatter Dimensions made by Hevipelle and more.
+It is not required to have played vanilla (the original game) before this, but some things may be confusing if you haven't.
 
 ## Run
 

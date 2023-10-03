@@ -9,6 +9,96 @@ export const changelog = [
    * }
    */
   {
+    date: [2023, 10, 2],
+    name: "Quantum Panic v0.0.3: Accidental overflow",
+    info: `<b>Current endgame: Who knows... I'm aiming for all NCs completed</b>
+    <br>
+    <br>
+    <b>New things:</b> Oh, there are some new things alright. Here are some categorized changes:
+    <br>
+    <br>
+    <h3>Infinity Upgrade rebalance!</h3>
+    <ul>
+      <li>Buffed IU12 to 2.0x -> 2.5x per-10 multiplier.</li>
+      <li>Buffed IU11 and IU31's formula, and IU11 is guaranteed to have at least 2x.</li>
+      <li>IU33 still has the same effect, but is more powerful than "L4D: Left 4 Dimensions"'s reward.</li>
+      <li>I may raise prices of row 4 upgrades a little because of the buffs early on.</li>
+      <li><b>Due to these changes, some of the Normal Challenges will change slightly.</b></li>
+    </ul>
+    <br>
+    <br>
+    <h3>Achievements!</h3>
+    <ul>
+      <li>"L4D: Left 4 Dimensions" now only adds +0.2x multiplier to Dimension Boosts.</li>
+      <li>"To infinity!"'s reward is getting tweaked. So far it starts you off with 100 antimatter on reset,<br>and gives a 4x multiplier that decreases as you get closer to 1.8e308 AM.</li>
+      <li>"Boosting to the max" allows "5 Dimension Antimatter Punch"'s reward to increase to 20x as the new maximum. (May need to tweak this)</li>
+      <li>Achievement multipliers are nerfed: 1.05x -> 1.04x per achievement, 1.30x -> 1.28x per achievement row.</li>
+    </ul>
+    <br>
+    <br>
+    <h3>Utility!</h3>
+    <ul>
+      <li>Made Automation unlock requirements show your "Highest Antimatter" instead of "Total Antimatter" and the current value you have.</li>
+      <li>Working on a "Set all autobuyer buy option" feature to improve QoL.</li>
+      <li>Eventually, some achievement rewards can be disabled.</li>
+      <li>Made some text in Dark themes easier to see.</li>
+    </ul>
+    `
+  },
+  {
+    date: [2023, 9, 30],
+    name: "Quantum Panic v0.0.2: A return to space",
+    info: `<b>Current endgame: 1 Infinity Point</b>
+    <br>
+    <br>
+    Not many things are going on right now. I'm learning like all the other mod makers are. Things will get bigger with time.<br>
+    I've finally beat the Reality update, so I have a reason to work on this again.
+    <br>
+    <br>
+    <b>New things:</b><br>
+    <ul>
+    <li>It is planned for all vanilla achievements past row 12 to be removed. I have started creating new achievements for the 13th row.</li>
+    <li>Achievement row 1 now has four achievements that give rewards out of eight. This should hopefully make pre-Infinity feel faster.</li>
+    <ul>
+      <li>"You gotta start somewhere" now boosts Antimatter Dimensions by 50% immediately.</li>
+      <li>"L4D: Left 4 Dimensions" now makes Dimension Boosts 25% stronger.</li>
+      <li>"5 Dimension Antimatter Punch" now boosts starting tickspeed by 1.05 per Dimension Boost, up to 4 Dimension Boosts.</li>
+      <li>"90 degrees to infinity" now gives a multiplier to 8th Antimatter Dimensions based on amount purchased.</li>
+    </ul>
+    <li>Achievement row 13 has been added, taking inspiration from NG++ / NG+3, with 6 out of 8 achievements giving rewards.</li>
+    <li>Updated repo to have new commits from the source code.</li>
+    <li>Updated saving - importing and exporting will now only work with Quantum Panic saves.<br>
+    I know some people probably will attempt to break the game and bring through Reality, NG++/NG+2R, and NG+3 saves, but don't do that.<br>
+    I don't plan on supporting old versions of the game because the vision for this iteration of the mod is much different now.<br>
+    In addition, spending time to work on a port of older mods will probably take much longer than I expect.<br>
+    Bug reports related to these issues will not be looked into.</li>
+    <li>New loading screen for alpha version.</li>
+    </ul>
+    `
+  },
+  {
+    date: [2023, 7, 21],
+    name: "Quantum Panic v0.0.1: You still gotta start somewhere",
+    info: `This marks the beginning of AD:QP development.
+    <br>
+    <br>
+    <b>New things:</b><br>
+    <ul>
+      <li>Re-implemented 20 news tickers from the last version of Quantification.</li>
+      <li>Added some things to the Aero theme</li>
+    </ul>
+    <b>New things planned:</b><br>
+    <ul>
+    <li>Removed Reality and replaced it with Quantum.</li>
+    <li>Quantum is now unlocked after reaching 2^4096 EP (1.044e1233). You will obtain quarks based on Quantum worth.</li>
+    <li>Quantum worth is based on your Replicanti, EP, and DT.</li>
+    <li>Created new row 14 and 15 achievements for early-start of mid-Quantum era.</li>
+    <li>Dilation is now a revised mechanic placed within Quantum.</li>
+    <li>A rebalance of Pre-Quantum</li>
+    </ul>
+    `
+  },
+  {
     date: [2023, 7, 18],
     name: "Final Official Patch",
     info: `

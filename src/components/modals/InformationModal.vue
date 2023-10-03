@@ -24,8 +24,7 @@ export default {
       project in 2016, it was expanded upon by a large team of developers and testers from then on.
       <br>
       <br>
-      The game has unfolding gameplay and multiple prestige layers. The "How to Play" button contains useful
-      information about progressing.
+      Quantum Panic is a mod developed by usavictor, formerly known as Antimatter Dimensions NG+2 Respecced, that attempts to rework the concept of the Quantum layer.
     </div>
     <div class="l-socials">
       <InformationModalButton

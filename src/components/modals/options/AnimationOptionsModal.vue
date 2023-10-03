@@ -16,7 +16,8 @@ export default {
       eternityUnlocked: false,
       dilationUnlocked: false,
       tachyonsUnlocked: false,
-      realityUnlocked: false,
+      realityUnlocked: false, // can't remove yet, many things are dependent
+      quantumUnlocked: false,
       animatedThemeUnlocked: false,
       bigCrunch: false,
       eternity: false,

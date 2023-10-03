@@ -167,6 +167,7 @@ export const Tickspeed = {
 
   get baseValue() {
     return DC.E3.timesEffectsOf(
+      Achievement(15),
       Achievement(36),
       Achievement(45),
       Achievement(66),

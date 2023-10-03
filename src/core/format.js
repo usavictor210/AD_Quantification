@@ -22,7 +22,7 @@ window.formatInt = function formatInt(value) {
 };
 
 window.formatFloat = function formatFloat(value, digits) {
-  if (isEND()) return "END";
+  if (isEND()) return "";
   if (Notations.current.isPainful) {
     return format(value, Math.max(2, digits), digits);
   }

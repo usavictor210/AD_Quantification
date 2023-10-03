@@ -29,8 +29,33 @@ export default {
       v-if="!isModal"
       class="c-credits-header"
     >
-      Antimatter Dimensions
+      Antimatter Dimensions: Quantum Panic
     </h1>
+
+    <div
+      v-for="role in roles.count.mod"
+      :key="role"
+    >
+      <h2 class="c-credits-section">
+        {{ pluralize(roles[role], relevantPeople(role).length) }}
+      </h2>
+      <div :class="{ 'l-credits--bulk': relevantPeople(role).length > 10}">
+        <div
+          v-for="person in relevantPeople(role)"
+          :key="person.name"
+          class="c-credit-entry"
+        >
+          {{ person.name }}
+          <span v-if="person.name2">
+            ({{ person.name2 }})
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="c-credits-header">
+      Antimatter Dimensions Developers
+    </h2>
 
     <div
       v-for="role in roles.count"

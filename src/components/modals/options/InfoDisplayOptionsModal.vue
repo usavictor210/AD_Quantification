@@ -66,6 +66,7 @@ export default {
       this.infinityUnlocked = this.fullCompletion || progress.isInfinityUnlocked;
       this.eternityUnlocked = this.fullCompletion || progress.isEternityUnlocked;
       this.realityUnlocked = this.fullCompletion || progress.isRealityUnlocked;
+      this.quantumUnlocked = this.fullCompletion || progress.isQuantumUnlocked;
       this.alchemyUnlocked = this.fullCompletion || Ra.unlocks.effarigUnlock.canBeApplied;
 
       const options = player.options.showHintText;

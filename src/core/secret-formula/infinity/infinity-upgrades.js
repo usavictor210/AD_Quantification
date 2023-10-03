@@ -12,8 +12,8 @@ export const infinityUpgrades = {
     id: "timeMult",
     cost: 1,
     description: "Antimatter Dimensions gain a multiplier based on time played",
-    effect: () => Math.pow(Time.totalTimePlayed.totalMinutes / 2, 0.15),
-    formatEffect: value => formatX(value, 2, 2),
+    effect: () => Math.max(Math.pow(Time.totalTimePlayed.totalMinutes / 2, 0.2), 2),
+    formatEffect: value => formatX(value, 3, 3),
     charged: {
       description: "Antimatter Dimensions gain a power effect based on time played and Teresa level",
       effect: () => 1 +
@@ -91,8 +91,8 @@ export const infinityUpgrades = {
     id: "dimMult",
     cost: 1,
     description: () => `Increase the multiplier for buying ${formatInt(10)} Antimatter Dimensions`,
-    effect: () => 1.1,
-    formatEffect: () => `${formatX(2, 0, 1)} ➜ ${formatX(2.2, 0, 1)}`,
+    effect: () => 1.25,
+    formatEffect: () => `${formatX(2, 0, 1)} ➜ ${formatX(2.5, 0, 1)}`,
     charged: {
       description: () => `The multiplier for buying ${formatInt(10)} Antimatter Dimensions gains ` +
         "a power effect based on Teresa level",
@@ -116,8 +116,8 @@ export const infinityUpgrades = {
     id: "timeMult2",
     cost: 3,
     description: "Antimatter Dimensions gain a multiplier based on time spent in current Infinity",
-    effect: () => Decimal.max(Math.pow(Time.thisInfinity.totalMinutes / 4, 0.25), 1),
-    formatEffect: value => formatX(value, 2, 2),
+    effect: () => Decimal.max(Math.pow(Time.thisInfinity.totalMinutes / 5, 0.3), 1),
+    formatEffect: value => formatX(value, 3, 3),
     charged: {
       description:
         "Antimatter Dimensions gain a power effect based on time spent in current Infinity and Teresa level",
@@ -146,7 +146,7 @@ export const infinityUpgrades = {
     checkRequirement: () => InfinityUpgrade.unspentIPMult.isBought,
     description: "Increase Dimension Boost multiplier",
     effect: () => 2.5,
-    formatEffect: () => `${formatX(2, 0, 1)} ➜ ${formatX(2.5, 0, 1)}`,
+    formatEffect: () => `${formatX(2.2, 0, 1)} ➜ ${formatX(2.5, 0, 1)}`,
     charged: {
       description: "Dimension Boost multiplier gains a power effect based on Teresa level",
       effect: () => 1 + Ra.pets.teresa.level / 200,

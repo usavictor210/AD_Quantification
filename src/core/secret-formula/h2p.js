@@ -19,13 +19,19 @@ export const h2p = {
     {
       name: "This Modal",
       info: () => `
-Welcome to the How to Play!
+Welcome to Quantum Panic, an Antimatter Dimensions mod created by usavictor.
 <br>
 <br>
 This modal (pop-up window) contains in-depth explanations and additional details for everything you will encounter
 as you progress through the game. As you unlock new features and mechanics, you will also gain access to additional
 pages here. If you ever feel lost or confused about how something in the game works, you may find a helpful
 explanation within the related entry in here. 
+<br>
+<br>
+As for the mod itself, the early game is intended to be slightly faster as part of a rebalance spanning the entire
+first two layers of the original game. Currently, this is the focus of the mod, as Quantum has not been implemented yet.
+Later on, Quantum will be introduced with a whole new series of features aiming to be well-balanced and reasonable
+for the player, rather than their pre-Reality update counterparts.
 <br>
 <br>
 For now, opening the How to Play will always start you on this page. After you get your first Dimension Boost,
@@ -43,7 +49,7 @@ Your game's save data is stored on your computer's browser data if you are playi
 installation folder if you are playing on Steam. This means that clearing your browser's cache or cookies, or fully
 uninstalling the game from Steam will also delete your save file.
 Similarly, if you are playing in a private or incognito window, your save
-will not be there the next time you open up your browser. The saves are browser-specific as well, so for example
+will not be kept the next time you open up your browser. The saves are browser-specific as well, so for example
 if you play the game on Chrome, you will not find your save on Firefox. Lastly, any saves you have on the web version
 and the Steam version will also be completely independent from each other.
 <br>
@@ -55,12 +61,16 @@ work properly, or else the game might not recognize the text as a valid save. Ce
 cut off part of the text if you are using one to transfer the save between devices.
 <br>
 <br>
-A properly-formatted save string from the Reality update will start with
+Quantum Panic will not support saves from the Reality update, as Reality content is not included in the source code
+of this mod, and likely will end up causing issues.
+<br>
+<br>
+A properly-formatted save string from the Quantum Panic mod will start with
 <b>${GameSaveSerializer.startingString.savefile}</b> and end with <b>${GameSaveSerializer.endingString.savefile}</b>.
-If you are importing from a version of the game from before Reality was released, it will instead start with <b>eyJ</b>
-and end with <b>In19</b>, <b>fX0=</b>, or <b>fQ==</b>. If neither of these are the case, then part of your save is
-missing and it will fail to import. In addition to importing and exporting to your clipboard, you can also import
+Previous saves from older versions of the modification (NG+2 Respecced) will not be compatible with this mod. 
+In addition to importing and exporting to your clipboard, you can also import
 and export from text files as well.
+<br>
 <br>
 You can use the "Choose save" button to pick between three separate saves on your browser. These saves are, for most
 intents and purposes, completely separate from each other. Importing and exporting will only affect the current save
@@ -376,12 +386,12 @@ the increase is multiplicative and will not take long to be visible.
 Your first Antimatter Galaxy requires ${formatInt(80)} Eighth Dimensions, and each additional Galaxy will cost
 another ${formatInt(60)} more.
 <br>
-<b>Distant Galaxy scaling:</b> Above ${formatInt(100)} Antimatter Galaxies the cost increase between Galaxies will
-increase by ${formatInt(2)} per Galaxy, making the next Galaxy cost ${formatInt(62)} more, then ${formatInt(64)} more,
+<b>Distant Galaxy scaling:</b> Above ${formatInt(100)} Antimatter Galaxies, the cost increase between Galaxies will become parabolic,
+starting at an increase of ${formatInt(2)} per Galaxy, making the next Galaxy cost ${formatInt(62)} more, then ${formatInt(64)} more,
 etc.
 <br>
-<b>Remote Galaxy scaling:</b> Above ${formatInt(Galaxy.remoteStart)} Antimatter Galaxies, the <i>total</i> cost
-increases by another ${formatPercents(0.002, 1)} per Galaxy, on top of Distant scaling.
+<b>Remote Galaxy scaling:</b> Above ${formatInt(Galaxy.remoteStart)} Antimatter Galaxies, the <i>total</i> cost starts to
+increase exponentially, being increased by another ${formatPercents(0.002, 1)} per Galaxy, on top of Distant scaling.
 <br>
 <br>
 <b>Hotkey: G</b> will try to purchase an Antimatter Galaxy.
@@ -418,8 +428,8 @@ Each Achievement has requirements to unlock. Once unlocked, some Achievements gi
 Requirements and rewards vary in difficulty and benefit significantly.
 <br>
 <br>
-In addition to any specific rewards for individual Achievements, you will receive a ${formatX(1.03, 2, 2)} multiplier
-to all Antimatter Dimensions. Each fully completed row also gives another ${formatX(1.25, 2, 2)}. The total multiplier
+In addition to any specific rewards for individual Achievements, you will receive a ${formatX(1.04, 2, 2)} multiplier
+to all Antimatter Dimensions. Each fully completed row also gives another ${formatX(1.28, 2, 2)}. The total multiplier
 effect from all Achievements together is shown above all the Achievement images.
 <br>
 <br>

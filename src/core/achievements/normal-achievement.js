@@ -61,7 +61,7 @@ class AchievementState extends GameMechanicState {
       Autobuyer.bigCrunch.bumpAmount(4);
     }
     if (this.id === 55 && !PlayerProgress.realityUnlocked()) {
-      Modal.message.show(`Since you performed an Infinity in under a minute, the UI changed on the screen.
+      Modal.message.show(`Since you performed an Infinity in under a minute, the UI will behave differently.
         Instead of the Dimensions disappearing, they stay and the Big Crunch button appears on top of them.
         This is purely visual, and is there to prevent flickering.`, {}, 3);
     }
@@ -167,7 +167,7 @@ export const Achievements = {
   _power: new Lazy(() => {
     const unlockedRows = Achievements.allRows
       .countWhere(row => row.every(ach => ach.isUnlocked));
-    const basePower = Math.pow(1.25, unlockedRows) * Math.pow(1.03, Achievements.effectiveCount);
+    const basePower = Math.pow(1.28, unlockedRows) * Math.pow(1.04, Achievements.effectiveCount);
     const exponent = getAdjustedGlyphEffect("effarigachievement") * Ra.unlocks.achievementPower.effectOrDefault(1);
     return Math.pow(basePower, exponent);
   }),

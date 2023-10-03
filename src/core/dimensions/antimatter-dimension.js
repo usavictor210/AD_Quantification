@@ -21,6 +21,9 @@ export function antimatterDimensionCommonMultiplier() {
     BreakInfinityUpgrade.slowestChallengeMult,
     InfinityUpgrade.totalTimeMult,
     InfinityUpgrade.thisInfinityTimeMult,
+    Achievement(11),
+    Achievement(21).effects.adMult,
+    Achievement(26),
     Achievement(48),
     Achievement(56),
     Achievement(65),
@@ -121,6 +124,7 @@ function applyNDMultipliers(mult, tier) {
       );
   }
   if (tier === 8) {
+    multiplier = multiplier.timesEffectsOf(Achievement(18));
     multiplier = multiplier.times(Sacrifice.totalBoost);
   }
 
@@ -633,7 +637,6 @@ export const AntimatterDimensions = {
     if (NormalChallenge(7).isRunning) return DC.D2.min(1 + DimBoost.totalBoosts / 5);
 
     let mult = DC.D2.plusEffectsOf(
-      Achievement(141).effects.buyTenMult,
       EternityChallenge(3).reward
     );
 

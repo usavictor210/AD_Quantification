@@ -132,6 +132,7 @@ export const AD = {
       for (let tier = 1; tier <= 8; tier++) {
         if (tier === 1) {
           dimMults[tier] = dimMults[tier].timesEffectsOf(
+            Achievement(11),
             Achievement(28),
             Achievement(31),
             Achievement(68),

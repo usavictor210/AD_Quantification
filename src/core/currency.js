@@ -236,11 +236,12 @@ Currency.antimatter = new class extends DecimalCurrency {
     return Effects.max(
       10,
       Perk.startAM,
-      Achievement(21),
+      Achievement(21).effects.startAM,
       Achievement(37),
       Achievement(54),
       Achievement(55),
-      Achievement(78)
+      Achievement(78),
+      Achievement(131).effects.startAM
     ).toDecimal();
   }
 }();

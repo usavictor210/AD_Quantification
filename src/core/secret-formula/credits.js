@@ -16,6 +16,13 @@ export const credits = {
     13: "Android Tester"
   },
 
+  mod_roles: {
+    1: "Mod Creator",
+    2: "Developers",
+    3: "Testers",
+    4: "Special Thanks"
+  },
+
   // Each person must have a name and at least one role (the index of the desired role in roles). They can also have a
   // second name, which will appear in parentheses besides their first.
   people: [
@@ -436,7 +443,30 @@ export const credits = {
       name2: "Katherine Goforth-Harbin",
       roles: 13
     }
+  ],
+
+  mod_people: [
+    {
+      name: "usavictor",
+      roles: 1
+    },
+    {
+      name: "Technokaguya",
+      name2: "Former developer",
+      roles: 2
+    },
+    {
+      name: "Aarex",
+      name2: "Creator of NG+3",
+      roles: 4
+    },
+    {
+      name: "goldenyoshi22",
+      name2: "Good friend",
+      roles: 4
+    },
   ]
 };
 
 credits.roles.count = Object.keys(credits.roles).length;
+credits.roles.count_mod = Object.keys(credits.mod_roles).length;
